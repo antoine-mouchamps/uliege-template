@@ -1,0 +1,71 @@
+\documentclass[a4paper, 10pt, english]{template}
+
+\newcommand{\deriv}{\mathrm{d}} % Write beautiful d in derivatives
+\newcommand{\eur}{\text{\euro}} % Use \eur to get a beautiful euro symbol, even in math mode
+
+\addbibresource{references.bib}
+
+\begin{document}
+
+% Customize References title based on language
+% ********************************************
+
+\iflanguage{french}{
+    \renewcommand\refname{Réferences}
+}{
+    \renewcommand\refname{References}
+}
+
+% Title page customization
+% ************************
+\begin{titlePage}
+    % Fill this with the year(s) of your choice.
+    % ******************************************
+    \academicyear{} 
+
+    % The first argument is the image you want on the title page and the
+    % second one is the fraction of the width the image will occupy.
+    % (default is 0.5)
+    % ******************************************************************
+    \titlepageimage{}{}
+    
+    % Fill this with the title of your choice (it can contain //).
+    % *******************************************************************
+    \addtitle{} 
+
+    % Add as many author as needed. The argument of \begin{authors} gives
+    % the number of author to print per line.
+    % *******************************************************************
+    \begin{authors}{1}
+        \addauthor{Antoine}{Mouchamps}{S211404}
+    \end{authors}
+
+\end{titlePage}
+\newpage
+
+% Customize the text at the bottom right of the pages by filling 
+% the curly braces.
+% **************************************************************
+\footerRight{}
+
+% Uncomment one of these if you want to display them.
+% ***************************************************
+%\tableofcontents
+%\listoffigures
+%\listoftables
+
+% ==========================================================================
+% Write everything you want below this line. No need to go to the next page,
+% it is already done ! Enjoy :)
+% ==========================================================================
+
+\part{test}
+
+\part{Bibliography}
+
+\section{test}
+\paragraph{fzio} tzeze
+
+\printbibliography
+
+\end{document}
